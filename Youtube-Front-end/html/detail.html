@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Detail</title>
+	<meta charset="UTF-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/detail.css">
+</head>
+<body>
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light">
+	  <div class="container-fluid d-flex align-items-start" id="nav-home">
+	  	<div class="d-flex justify-content-between">
+	  		<a id="menu-bar" class="navbar-brand" href="#"><img src="../img/menu.svg" style="height: 20px; width: 20px;"></a>
+	    
+	        <a id="youtube-icon" class="navbar-brand" href="#"><img src="../img/youtube.svg.png" style="width: 90px; height: 20px;"></a>
+	  	</div>
+
+	    
+	  	<!-- search bar -->
+	    <div id="search-field">
+	      <form class="d-flex" id="search">
+	        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+	        <button class="btn btn-secondary" type="submit"><img src="https://image.flaticon.com/icons/png/512/3106/3106797.png" style="width: 15px; height: 15px; margin-top: -10px;" /></button>
+	        <img src="https://image.flaticon.com/icons/png/512/2766/2766965.png" style="width: 15px; height: 20px; margin: 5px 0px 0px 15px" />
+	      </form>
+	    </div>
+
+	   <!--  function & avatar -->
+	    <div>
+	    	<ul class="navbar-nav me-auto mb-2 ">
+		        <li class="nav-item">
+		          <a class="nav-link" aria-current="page" href="#"><img class="func-img" src="https://image.flaticon.com/icons/png/512/4189/4189286.png"></a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#"><img class="func-img" src="https://image.flaticon.com/icons/png/512/847/847455.png"></a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#"><img class="func-img" src="https://image.flaticon.com/icons/png/512/3239/3239952.png"></a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#"><img class="avatar" src="../img/avatar.jpg"></a>
+		        </li>
+		    </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<!-- screen -->
+
+	<div id="screen-detail" class="d-flex">
+		<div id="video-detail">
+			<div class="embed-responsive">
+			  <iframe class="embed-responsive-item" id="video-iframe" src="https://www.youtube.com/embed/ytEXR3zxVDQ?rel=0&autoplay=1" allowfullscreen></iframe>
+			  <span>
+			  	<p>don’t stress it's gonna be okay</p>
+			  </span>
+			  <div class="d-flex">
+			  	<div id="detail-view">
+			  		<p class="text-muted">167,811 views <span> • </span> <span>Apr 4, 2021</span></p>
+			  	</div>
+			  	<div class="d-flex justify-content-between" id="detail-func">
+			  		<button type="button" class="detail-btn special-btn" data-toggle="tooltip" data-placement="bottom" title="I like this"><img class="detail-img" src="https://img.icons8.com/material-two-tone/24/000000/facebook-like--v1.png"/> <span>11K</span></button>
+			  		<button type="button" class="detail-btn special-btn" data-toggle="tooltip" data-placement="bottom" title="I dislike this"><img class="detail-img" src="https://img.icons8.com/cotton/64/000000/thumbs-down--v4.png"/> <span>36</span></button>
+
+			  		<button type="button" class="detail-btn" data-toggle="tooltip" data-placement="bottom" title="Share"><img class="detail-img" src="https://img.icons8.com/ios-glyphs/30/000000/forward-arrow.png"/> <span>SHARE</span></button>
+
+			  		<button type="button" class="detail-btn" data-toggle="tooltip" data-placement="bottom" title="Save"><img class="detail-img" src="https://img.icons8.com/windows/32/000000/save-search.png"/> <span>SAVE</span></button>
+
+			  		<a href="#"><img class="detail-img" src="https://img.icons8.com/material-two-tone/24/000000/dots-loading--v2.png"/></a>
+			  	</div>
+			  </div>
+			</div>
+
+			<hr>
+
+			<!-- author -->
+			<div class="d-flex">
+				<a class="nav-link" href="#"><img class="author-ava" src="https://yt3.ggpht.com/ytc/AAUvwnioT6AtBNpN24dIZVVC7lufbV1o9zBo9xr5SZkr1Q=s88-c-k-c0x00ffffff-no-rj"></a>
+				<div id="author-content">
+					<a href="#" style="color: black;"><b>Ambition</b></a>
+					<p class="text-muted">1.58 million subscribers</p>
+					<pre>
+I promise 💕🌸
+
+all tracks by coldbrew & quist
+					</pre>
+
+					<a href="#" class="text-muted">SHOW MORE</a>
+				</div>
+				<button type="button" id="sub-btn">SUBCRIBE</button>
+			</div>
+			<hr style="margin-top: 10px;">
+
+			<!-- comment -->
+
+			<div>
+				<div class="d-flex" id="comment">
+					<h6>474 Comments</h6>
+					<a href="#" id="sort-by" style="margin-left: 6%;" class="d-flex"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 20px; height: 20px; margin-right: 5px;"><g class="style-scope yt-icon"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z" class="style-scope yt-icon"></path><path d="M0 0h24v24H0z" fill="none" class="style-scope yt-icon"></path></g></svg>
+					<span style="color: #606060; font-size: 0.9rem;">SORT BY</span></a>
+				</div>
+
+				<!-- my comment -->
+
+				<div id="my-comment" class="d-flex">
+					<a href="#"><img class="avatar-comment" src="../img/avatar.jpg"></a>
+					<input type="text" placeholder="Add a public comment..."/>
+				</div>
+
+				<!-- comment in public -->
+
+				<div class="d-flex public-comment" >
+					<div>
+						<a href="#"><img class="avatar-comment" src="https://yt3.ggpht.com/ytc/AAUvwnhGG1PuGkzNLW2mwu_R_9-IFSEyf59WN_PdelRv=s88-c-k-c0x00ffffff-no-rj"></a>
+					</div>
+
+					<div class="pub-cmt-detail">
+						<a href="#" class="pub-a"><b>istillrememberthosedays</b></a>
+						<a href="#" class="text-muted pub-a">1 month ago (editted)</a>
+						<p>to everyone who is reading this: <br><br>- i hope both sides of your pillow are warm (or cold, if you like)<br>- i hope you don't have to go to the bathroom at night</p>
+
+						<a href="#" id="read-more">Read more</a>
+
+						<div class="d-flex" id="react-cmt">
+							<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"><g class="style-scope yt-icon"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path></g></svg>
+							<span>1.2K</span>
+
+							<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" id="dislike-cmt"><g class="style-scope yt-icon"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path></g></svg>
+
+							<a href="#"><b>RELY</b></a>
+						</div>
+
+						<a href="#" class="d-flex" id="show-reply-a"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g class="style-scope yt-icon"><path d="M7 10l5 5 5-5z" class="style-scope yt-icon"></path></g></svg><b>View 24 replies</b></a>
+					</div>
+				</div>
+
+				<!-- comment 2 -->
+
+				<div class="d-flex public-comment" >
+					<div>
+						<a href="#"><img class="avatar-comment" src="https://yt3.ggpht.com/ytc/AAUvwni1oBWH092RZR08Mv89hg-KxXbLrf3T_ArU3YiVUA=s88-c-k-c0x00ffffff-no-rj"></a>
+					</div>
+
+					<div class="pub-cmt-detail">
+						<a href="#" class="pub-a"><b>Azizthe21</b></a>
+						<a href="#" class="text-muted pub-a">1 month ago (editted)</a>
+						<p>mouse cute :></p>
+
+						<div class="d-flex" id="react-cmt">
+							<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"><g class="style-scope yt-icon"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path></g></svg>
+							<span>614</span>
+
+							<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" id="dislike-cmt"><g class="style-scope yt-icon"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path></g></svg>
+
+							<a href="#"><b>RELY</b></a>
+						</div>
+
+						<a href="#" class="d-flex" id="show-reply-a"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g class="style-scope yt-icon"><path d="M7 10l5 5 5-5z" class="style-scope yt-icon"></path></g></svg><b>View 5 replies</b></a>
+					</div>
+				</div>
+
+				<!-- comment 3 -->
+
+				<div class="d-flex public-comment" >
+					<div>
+						<a href="#"><img class="avatar-comment" src="https://yt3.ggpht.com/ytc/AAUvwniiGWt0yGEgNUidxmS23729mMt2pa2IleYrc0B6Uw=s88-c-k-c0x00ffffff-no-rj"></a>
+					</div>
+
+					<div class="pub-cmt-detail">
+						<a href="#" class="pub-a"><b>月Lua Natsuki</b></a>
+						<a href="#" class="text-muted pub-a">1 month ago</a>
+						<p>I feel personally attached to this channel, lol, it's like they're talking to me...</p>
+
+						<div class="d-flex" id="react-cmt">
+							<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"><g class="style-scope yt-icon"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path></g></svg>
+							<span>727</span>
+
+							<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" id="dislike-cmt"><g class="style-scope yt-icon"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path></g></svg>
+
+							<a href="#"><b>RELY</b></a>
+						</div>
+
+						<a href="#" class="d-flex" id="show-reply-a"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g class="style-scope yt-icon"><path d="M7 10l5 5 5-5z" class="style-scope yt-icon"></path></g></svg><b>View 2 replies</b></a>
+					</div>
+				</div>
+
+				<!-- comment 4 -->
+
+				<div class="d-flex public-comment" >
+					<div>
+						<a href="#"><img class="avatar-comment" src="https://yt3.ggpht.com/ytc/AAUvwnjA_Cyj-8XvOIaITJyqDxrelxOBUXbpZOJLTDtm=s88-c-k-c0x00ffffff-no-rj"></a>
+					</div>
+
+					<div class="pub-cmt-detail">
+						<a href="#" class="pub-a"><b>Sapphire Chan_xD</b></a>
+						<a href="#" class="text-muted pub-a">1 month ago</a>
+						<p>I just cried the whole time,ive been stressing out so much lately,because of family problems,school, and more i have so much work to do for school,and it kinda stresses me out,i knkw as a student im not the only one going through tough times right now.This really helped me..thank you</p>
+
+						<a href="#" id="read-more">Read more</a>
+
+						<div class="d-flex" id="react-cmt">
+							<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"><g class="style-scope yt-icon"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path></g></svg>
+							<span>328</span>
+
+							<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" id="dislike-cmt"><g class="style-scope yt-icon"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path></g></svg>
+
+							<a href="#"><b>RELY</b></a>
+						</div>
+
+						<a href="#" class="d-flex" id="show-reply-a"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g class="style-scope yt-icon"><path d="M7 10l5 5 5-5z" class="style-scope yt-icon"></path></g></svg><b>View 9 replies</b></a>
+					</div>
+				</div>
+
+
+				<!-- comment 5 -->
+				<div class="d-flex public-comment" >
+					<div>
+						<a href="#"><img class="avatar-comment" src="https://yt3.ggpht.com/ytc/AAUvwngbsIVGFlz-54xThuy8dakaTnu8fSGqWhj6fzqU7A=s88-c-k-c0x00ffffff-no-rj"></a>
+					</div>
+
+					<div class="pub-cmt-detail">
+						<a href="#" class="pub-a"><b>kangaroo</b></a>
+						<a href="#" class="text-muted pub-a">1 month ago</a>
+						<p>I noticed that I’m falling back into depression and last night it really hit. Now all my family and family-friends are at my house for Easter and I can’t bring myself to leave my bedroom. This video is making it feel a little easier, so thank you.</p>
+
+						<div class="d-flex" id="react-cmt">
+							<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"><g class="style-scope yt-icon"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path></g></svg>
+							<span>393</span>
+
+							<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" id="dislike-cmt"><g class="style-scope yt-icon"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path></g></svg>
+
+							<a href="#"><b>RELY</b></a>
+						</div>
+
+						<a href="#" class="d-flex" id="show-reply-a"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g class="style-scope yt-icon"><path d="M7 10l5 5 5-5z" class="style-scope yt-icon"></path></g></svg><b>View 12 replies</b></a>
+					</div>
+				</div>
+
+				<!-- comment 6 -->
+
+				<div class="d-flex public-comment" >
+					<div>
+						<a href="#"><img class="avatar-comment" src="https://yt3.ggpht.com/ytc/AAUvwngd_A5-M1T60ogrBwS7xbDmjUQGPW87lmS6tAhilw=s88-c-k-c0x00ffffff-no-rj"></a>
+					</div>
+
+					<div class="pub-cmt-detail">
+						<a href="#" class="pub-a"><b>GooseWithUhBow</b></a>
+						<a href="#" class="text-muted pub-a">1 month ago (editted)</a>
+						<p>I just got news this week that someone I know died. He was my piano teacher, my friend, and a part of my family. I knew him for 7 years and cant really remember much from before my family met him. He was pretty popular in the Flamenco community and wrote some books which is pretty cool. He would always get mad whenever fans would try to talk to him. And he always seemed a bit grumpy to mostly everyone. But with my family he would make jokes and laugh and always complain about his diet heh. </p>
+
+						<a href="#" id="read-more">Read more</a>
+
+						<div class="d-flex" id="react-cmt">
+							<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"><g class="style-scope yt-icon"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path></g></svg>
+							<span>164</span>
+
+							<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" id="dislike-cmt"><g class="style-scope yt-icon"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path></g></svg>
+
+							<a href="#"><b>RELY</b></a>
+						</div>
+
+						<a href="#" class="d-flex" id="show-reply-a"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g class="style-scope yt-icon"><path d="M7 10l5 5 5-5z" class="style-scope yt-icon"></path></g></svg><b>View 8 replies</b></a>
+					</div>
+				</div>
+
+				<!-- comment 7 -->
+
+				<div class="d-flex public-comment" >
+					<div>
+						<a href="#"><img class="avatar-comment" src="https://yt3.ggpht.com/ytc/AAUvwnhxjw3BtzZYY1WELftPw432Ew_uHJ1CGxHHiY04tw=s88-c-k-c0x00ffffff-no-rj"></a>
+					</div>
+
+					<div class="pub-cmt-detail">
+						<a href="#" class="pub-a"><b>Aetaur</b></a>
+						<a href="#" class="text-muted pub-a">1 month ago</a>
+						<p>I'm convinced that music is the only thing that can comfort me now.</p>
+
+						<div class="d-flex" id="react-cmt">
+							<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"><g class="style-scope yt-icon"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path></g></svg>
+							<span>274</span>
+
+							<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" id="dislike-cmt"><g class="style-scope yt-icon"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path></g></svg>
+
+							<a href="#"><b>RELY</b></a>
+						</div>
+
+						<a href="#" class="d-flex" id="show-reply-a"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g class="style-scope yt-icon"><path d="M7 10l5 5 5-5z" class="style-scope yt-icon"></path></g></svg><b>View 3 replies</b></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="video-recommend">
+			<!-- video recommend 1 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/zd44dgITV_Y/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA8nKmA5nyDbileGedW2JnYm-yLDA"/>
+					<div class="video-time">29 : 13</div>
+				</div>
+				<div class="recommend-content">
+					<b>cute songs to help you cope with sadness</b>
+					<p class="text-muted">Ambition</p>
+					<p class="text-muted">60K views <span> • </span> <span>3 months ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 2 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/0-q1KafFCLU/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBRzztGnfIUKCbor0gxxFjypHAimA"/>
+					<div class="video-time">3 : 19</div>
+				</div>
+				<div class="recommend-content">
+					<b>[MV] IU(아이유) _ Celebrity</b>
+					<p class="text-muted">1theK (원더케이)</p>
+					<p class="text-muted">80M views <span> • </span> <span>4 months ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 3 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/duszzjvhglo/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCIs9fnPa_xpTp8O9cnKXuM2zFEdQ"/>
+					<div class="video-time">42 : 01</div>
+				</div>
+				<div class="recommend-content">
+					<b>[𝙥𝙡𝙖𝙮𝙡𝙞𝙨𝙩] 지드래곤이 칠하는 공허함의 색깔</b>
+					<p class="text-muted">사공사</p>
+					<p class="text-muted">2.7M views <span> • </span> <span>6 months ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 4 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/PJielywHIjY/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBCJZLBMnkQwSCSyzzdxiiZve2NQQ"/>
+					<div class="video-time">35 : 54</div>
+				</div>
+				<div class="recommend-content">
+					<b>it's going to be okay...</b>
+					<p class="text-muted">Ambition</p>
+					<p class="text-muted">4.6M views <span> • </span> <span>3 years ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 5 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/nmKTlmByng0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCdM1RB2mHVWXqPC5X6a7eh4CZXwQ"/>
+					<div class="video-time">3 : 26</div>
+				</div>
+				<div class="recommend-content">
+					<b>TO THE MOON - hooligan. (Official Lyric Video)</b>
+					<p class="text-muted">hooligan.official</p>
+					<p class="text-muted">5.4M views <span> • </span> <span>10 months ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 6 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/fXw0jcYbqdo/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCOAegnYfcR6d1GYwwfOzMx7xwd2g"/>
+					<div class="video-time">4 : 35</div>
+				</div>
+				<div class="recommend-content">
+					<b>Bruno Mars - Talking To The Moon (Official Lyric Video)</b>
+					<p class="text-muted">Bruno Mars</p>
+					<p class="text-muted">66M views <span> • </span> <span>7 months ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 7 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/JV2QW8w5G2g/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLApxV-43ueHaVXUTWPfmBhwPmsQZQ"/>
+					<div class="video-time">3 : 28</div>
+				</div>
+				<div class="recommend-content">
+					<b>THẦM THƯƠNG TRỘM NHỚ | MIU LÊ X HOÀNG DŨNG</b>
+					<p class="text-muted">Miu Lê Official</p>
+					<p class="text-muted">1.1M views <span> • </span> <span>1 day ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 8 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/lbmfHFuMi6s/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB35J6eLitrQYp1wosHRNHbAuUF8w"/>
+					<div class="video-time">3 : 20</div>
+				</div>
+				<div class="recommend-content">
+					<b>Yêu Thầm (Official Live Performance)</b>
+					<p class="text-muted">Hoàng Yến Chibi Official</p>
+					<p class="text-muted">4.9M views <span> • </span> <span>1 month ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 9 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/IanxTQ6ay3c/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBgkB4lBRSKPv0tbzRbXDOJwrJtDA"/>
+					<div class="video-time">57 : 44</div>
+				</div>
+				<div class="recommend-content">
+					<b>I met you when I was 18 ❤️ (mix)</b>
+					<p class="text-muted">Taz Network</p>
+					<p class="text-muted">9.7M views <span> • </span> <span>2 years ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 10 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/vVhKA9Av6vA/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfDOlRxu35H0DTMGOiNRf7kuMUsg"/>
+					<div class="video-time">5 : 00</div>
+				</div>
+				<div class="recommend-content">
+					<b>bao tiền một mớ bình yên?' - 14 Casper & Bon (Official)</b>
+					<p class="text-muted">14 Casper</p>
+					<p class="text-muted">8.5M views <span> • </span> <span>5 months ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 11 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/tQ0yjYUFKAE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA9_5ztUTCQDlmjYLOkXhHG-yt8sg"/>
+					<div class="video-time">3 : 18</div>
+				</div>
+				<div class="recommend-content">
+					<b>Justin Bieber - Peaches ft. Daniel Caesar, Giveon</b>
+					<p class="text-muted">Justin Bieber</p>
+					<p class="text-muted">241M views <span> • </span> <span>2 months ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 12 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/PbasE68lqA4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPX4dPCv8NfIYCw2XJjf3DbY8HGA"/>
+					<div class="video-time">24 : 15</div>
+				</div>
+				<div class="recommend-content">
+					<b>Ngơ ( MCK )  | Nhạc Indie - Tuyển tập  Nhạc tình của Ngơ</b>
+					<p class="text-muted">Oke Lân music</p>
+					<p class="text-muted">413K views <span> • </span> <span>5 months ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 13 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/zZWICdCVKXo/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDkXLLKdlF47O3_DBvFA01CbSPVIw"/>
+					<div class="video-time">4 : 15</div>
+				</div>
+				<div class="recommend-content">
+					<b>PHÍ PHƯƠNG ANH ft. RIN9 | Răng Khôn | Official Music Video</b>
+					<p class="text-muted">PHÍ PHƯƠNG ANH Official</p>
+					<p class="text-muted">9.6M views <span> • </span> <span>1 month ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 14 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/K9_VFxzCuQ0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXVG-ge_wU-WeGlK8nE3fZoZ-3Kw"/>
+					<div class="video-time">3 : 41</div>
+				</div>
+				<div class="recommend-content">
+					<b>ROSÉ - 'Gone' M/V</b>
+					<p class="text-muted">BLACKPINK</p>
+					<p class="text-muted">81M views <span> • </span> <span>1 month ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 15 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/PNhYz6RmIr4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzpai1vyutfjZZKFmVIflQ2PPQJQ"/>
+					<div class="video-time">4 : 05</div>
+				</div>
+				<div class="recommend-content">
+					<b>Xích Thêm Chút - XTC Remix | RPT Groovie ft TLinh x RPT MCK (Prod. by fat_benn & RPT LT)| RAPITALOVE</b>
+					<p class="text-muted">Rapital Official</p>
+					<p class="text-muted">26M views <span> • </span> <span>1 month ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 16 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/QZHJi2NKcag/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDfj0IZSdVYcO_4ZRKCtOnDkX0JQQ"/>
+					<div class="video-time">3 : 50</div>
+				</div>
+				<div class="recommend-content">
+					<b>Bao Nhiêu - Chillies (Official Lyric Video)</b>
+					<p class="text-muted">Chillies</p>
+					<p class="text-muted">642K views <span> • </span> <span>1 week ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 17 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/SGlBQR-ftVI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAS0NG1r2MtfPYxQyTCTaUTIjGBGg"/>
+					<div class="video-time">3 : 59</div>
+				</div>
+				<div class="recommend-content">
+					<b>Dù Cho Mai Về Sau (Official Music Video) / buitruonglinh</b>
+					<p class="text-muted">buitruonglinh</p>
+					<p class="text-muted">12M views <span> • </span> <span>6 months ago</span></p>
+				</div>
+			</div>
+
+			<!-- video recommend 18 -->
+			<div class="d-flex justify-content-start recommend-detail">
+				<div class="vid-img">
+					<img class="recommend-img" src="https://i.ytimg.com/vi/OEBX7_VbdAM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDcwLZ4jeyqBuvjJBLyjOn6kCXsAw"/>
+					<div class="video-time">1 : 17 : 31</div>
+				</div>
+				<div class="recommend-content">
+					<b>you once had a dream of sleeping peacefully in a forest 🌿🍄</b>
+					<p class="text-muted">Chillax</p>
+					<p class="text-muted">309K views <span> • </span> <span>3 months ago</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

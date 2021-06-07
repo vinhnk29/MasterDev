@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body {
+	color: #202124;
+    font-family: 'Roboto', sans-serif;
+}
+
+#sign-in {
+	margin-top: 2%;
+}
+
+.card {
+	width: 35%;
+	padding: 2%;
+}
+
+.card-title {
+	margin-top: 2%;
+}
+
+#input-email {
+	height: 50px;
+	margin-bottom: 1%;
+	margin-top: 10%;
+}
+
+.login-a {
+	font-size: 14px;
+   	color: #1a73e8;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+}
+
+#learn-more {
+	margin-top: 10%;
+}
+
+#learn-more p {
+	margin-bottom: 0;
+}
+
+#login-final{
+	margin-top: 10%;
+	margin-bottom: 30%;
+}
+
+#next-btn {
+	width: 80px;
+}
+
+footer {
+	width: 35%;
+	margin-top: 1%;
+	border: none !important;
+	padding: 0 !important;
+	font-size: 15px;
+}
+
+#li-func {
+	margin-left: 4%;
+}
+
+.form-select {
+	border: none;
+}
+
+
+#footer-li {
+	list-style-type: none;
+}
+
+#footer-li a{
+	color: #757575 !important;
+	text-decoration: none;
+	margin-left: 30px;
+}

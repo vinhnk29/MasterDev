@@ -1,0 +1,169 @@
+body {
+	background-color: white;
+	margin: 0;
+}
+
+
+#nav-home {
+	margin-top: 5%;
+	margin-bottom: 2%;
+	position: fixed;
+	z-index: 1;
+	background-color: white;
+}
+
+.container {
+	justify-content: none;
+}
+
+#menu-bar {
+	margin: 0 20% 0 10%;
+}
+
+#search-field {
+	margin-top: 0.7%;
+}
+
+#search input{
+	border-radius: 0;
+	width: 500px;
+	height: 30px;
+}
+
+#search button{
+	border-radius: 0;
+	background-color: #f8f8f8;
+	border: 1px solid #d3d3d3;
+	width: 60px;
+	height: 30px;
+}
+
+.func-img {
+	width: 18px; 
+	height: 18px;
+	margin-right: 8px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+#menu ul {
+	list-style-type: none;
+	font-size: 10px;
+}
+
+#main-screen {
+	width: 100%;
+	margin: 3% 0 0 5%;
+}
+
+.menu-block {
+	padding: 20% 10% 10% 10%; 
+}
+
+.menu-block:hover {
+	background-color: #F2F2F2;
+}
+
+#menu {
+	position: fixed;
+	margin-top: 3%;
+}
+
+#recommend {
+	width: 95%;
+	border-top: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+	padding: 1% 0 1% 0;
+	position: fixed;
+	z-index: 1;
+	background-color: white;
+}
+
+#home-video {
+	margin-top: 5%;
+	background-color: #F9F9F9;
+}
+
+.recommend-li {
+	border: 1px solid #E5E5E5;
+	background-color: #F9F9F9;
+	padding: 3px 15px 3px 15px;
+	border-radius: 16px;
+	font-size: 14px;
+}
+
+.recommend-li:hover {
+	background-color: #F2F2F2;
+}
+
+.recommend-li a {
+	text-decoration: none;
+	color: black;
+}
+
+.video-img {
+	width: 280px;
+	height: 150px;
+}
+
+.card-body {
+	background-color: #F9F9F9;
+	border-color: #F9F9F9;
+	padding: 10px 0 0 0;
+}
+
+#home-video {
+	margin-top: 5%;
+}
+
+.video-row {
+	margin-top: 3%;
+}
+
+.video-row a {
+	text-decoration: none;
+	color: black;
+}
+
+.card {
+	border-radius: 0;
+	border: none;
+}
+
+.card-text {
+	margin-bottom: 0;
+}
+
+.channel-img {
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	margin-right: 15px;
+}
+
+
+.hr-screen {
+	border-top: 5px solid #686868;
+}
+
+.cate-title {
+	margin-left: 1%;
+	margin-top: 3%;
+}
+
+#down-btn {
+	width: 100%;
+	border:none;
+	background-color: #F9F9F9;
+	margin-top: 1%;
+	height: 40px;
+}
+
+#down-btn:hover {
+	background-color: #EFEFEF;
+}
