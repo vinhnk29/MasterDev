@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+	<div class="container card mx-auto align-self-center" id="sign-in">
+		<div class="card-body">
+			<div class="text-center">
+				<img src="../img/google-2015.svg" width="80" height="40">
+				<h4 class="card-title">Sign in</h4>
+				<p class="card-subtitle mb-2">to continue to YouTube</p>
+			</div>
+    		<div>
+    			<input type="text" class="form-control" id="input-email" placeholder="Email or phone">
+    			<a href="#" class="login-a fw-bold">Forgot email?</a>
+    		</div>
+    		<div id="learn-more">
+    			<p class="text-muted" style="font-size: 14px;">Not your computer? Use Guest mode to sign in privately.</p>
+    			<a href="#" class="login-a fw-bold">Learn more</a>
+    		</div>
+
+    		<div id="login-final">
+    			<a href="#" class="login-a fw-bold float-start">Create account</a>
+    			<button type="button" class="btn btn-primary float-end" id="next-btn">Next</button>
+    		</div>
+  		</div>
+	</div>
+	<footer class="card mx-auto d-flex flex-row">
+		<div id="multi-select">
+			<select class="form-select form-select-sm">
+			  <option selected>English (United States)</option>
+			  <option value="1">Vietnamese</option>
+			  <option value="2">Chinese</option>
+			  <option value="3">Japanese</option>
+			</select>
+		</div>
+		<div id="li-func">
+			<ul id="footer-li" class="d-flex justify-content-between">
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
